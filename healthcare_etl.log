@@ -1,0 +1,388 @@
+2026-11-17 23:24:03,861 - INFO - Starting Data Extraction...
+2026-11-17 23:24:03,869 - INFO - Extraction completed successfully.
+2026-11-17 23:24:03,869 - INFO - Starting Data Validation...
+2026-11-17 23:24:03,869 - INFO - patients.csv schema validated successfully.
+2026-11-17 23:24:03,869 - INFO - appointments.csv schema validated successfully.
+2026-11-17 23:24:03,869 - INFO - treatments.csv schema validated successfully.
+2026-11-17 23:24:03,870 - INFO - Detected 809 orphan appointments.
+2026-11-17 23:24:03,870 - INFO - Starting Data Transformation & Cleaning...
+2026-11-17 23:24:03,875 - INFO - Transformation completed successfully.
+2026-11-17 23:24:03,875 - INFO - Starting Data Enrichment...
+2026-11-17 23:24:03,878 - INFO - Enrichment completed successfully.
+2026-11-17 23:24:03,878 - INFO - Loading data into target database (Mock/SQL)...
+2026-11-17 23:24:03,878 - INFO - Load completed successfully.
+2026-11-17 23:27:03,971 - INFO - ===== ETL PIPELINE EXECUTION STARTED =====
+2026-11-17 23:27:03,971 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-17 23:27:03,977 - INFO - Extraction completed successfully.
+2026-11-17 23:27:03,977 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-17 23:27:03,977 - INFO - patients.csv: Schema validated successfully.
+2026-11-17 23:27:03,977 - INFO - appointments.csv: Schema validated successfully.
+2026-11-17 23:27:03,977 - INFO - treatments.csv: Schema validated successfully.
+2026-11-17 23:27:03,979 - INFO - Orphan appointments detected: 809
+2026-11-17 23:27:03,979 - INFO - Orphan treatments detected: 325
+2026-11-17 23:27:03,982 - INFO - Data quality report generated successfully.
+2026-11-17 23:27:03,982 - INFO - --- TRANSFORM PHASE STARTED ---
+2026-11-17 23:27:03,988 - INFO - Transformation and cleaning completed successfully.
+2026-11-17 23:27:03,988 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-17 23:27:03,990 - INFO - Data enrichment completed successfully[cite: 1].
+2026-11-17 23:27:03,990 - INFO - --- LOAD PHASE STARTED ---
+2026-11-17 23:27:03,990 - INFO - ETL Metrics Tracked: {'extracted_rows_patients': 1100, 'extracted_rows_appointments': 5500, 'extracted_rows_treatments': 7500, 'invalid_records_count': np.int64(1134), 'duplicate_records_removed': 33, 'loaded_rows': 12933}
+2026-11-17 23:27:03,990 - INFO - Load phase and audit logging completed successfully[cite: 1].
+2026-11-17 23:27:03,990 - INFO - ===== ETL PIPELINE EXECUTION COMPLETED =====
+2026-11-17 23:39:07,261 - INFO - ===== ETL PIPELINE EXECUTION STARTED =====
+2026-11-17 23:39:07,261 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-17 23:39:07,268 - INFO - Extraction completed successfully.
+2026-11-17 23:39:07,268 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-17 23:39:07,268 - INFO - patients.csv: Schema validated successfully.
+2026-11-17 23:39:07,268 - INFO - appointments.csv: Schema validated successfully.
+2026-11-17 23:39:07,268 - INFO - treatments.csv: Schema validated successfully.
+2026-11-17 23:39:07,269 - INFO - Orphan appointments detected: 809
+2026-11-17 23:39:07,269 - INFO - Orphan treatments detected: 325
+2026-11-17 23:39:07,272 - INFO - Data quality report generated successfully.
+2026-11-17 23:39:07,272 - INFO - --- TRANSFORM PHASE STARTED ---
+2026-11-17 23:39:07,281 - INFO - Transformation and cleaning completed successfully.
+2026-11-17 23:39:07,281 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-17 23:39:07,284 - INFO - Data enrichment completed successfully[cite: 1].
+2026-11-17 23:39:07,284 - INFO - --- LOAD PHASE STARTED ---
+2026-11-17 23:39:07,285 - INFO - ETL Metrics Tracked: {'extracted_rows_patients': 1100, 'extracted_rows_appointments': 5500, 'extracted_rows_treatments': 7500, 'invalid_records_count': np.int64(1134), 'duplicate_records_removed': 33, 'loaded_rows': 12933}
+2026-11-17 23:39:07,285 - INFO - Load phase and audit logging completed successfully[cite: 1].
+2026-11-17 23:39:07,285 - INFO - ===== ETL PIPELINE EXECUTION COMPLETED =====
+2026-11-17 23:54:36,034 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-17 23:54:36,034 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-17 23:54:36,040 - INFO - Extraction completed successfully.
+2026-11-17 23:54:36,040 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-17 23:54:36,042 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-17 23:54:36,042 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-17 23:54:36,050 - INFO - NumPy Stats -> Mean Cost: 2531.09, Median Duration: 93.0, Std Duration: 50.96
+2026-11-17 23:54:36,055 - INFO - Transformations and advanced business logic completed.
+2026-11-17 23:54:36,055 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-17 23:57:04,164 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-17 23:57:04,165 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-17 23:57:04,172 - INFO - Extraction completed successfully.
+2026-11-17 23:57:04,172 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-17 23:57:04,174 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-17 23:57:04,174 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-17 23:57:04,186 - INFO - Transformations and cleaning completed successfully.
+2026-11-17 23:57:04,186 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-17 23:57:04,191 - INFO - Dataset enrichment and merging completed.
+2026-11-17 23:57:04,191 - INFO - --- LOAD PHASE STARTED ---
+2026-11-17 23:57:04,196 - INFO - ETL Audit Metrics successfully saved: {'extracted_rows_patients': 0, 'extracted_rows_appointments': 0, 'extracted_rows_treatments': 0, 'invalid_records_count': 1134, 'duplicate_records_removed': 395, 'loaded_rows': 12612}
+2026-11-17 23:57:04,196 - INFO - ===== HEALTHCARE ETL PIPELINE COMPLETED =====
+2026-11-18 00:04:40,701 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-18 00:04:40,701 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:04:40,715 - INFO - Extraction completed successfully.
+2026-11-18 00:04:40,715 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:04:40,717 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:04:40,717 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:04:40,734 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:04:40,734 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:04:40,738 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:06:12,375 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-18 00:06:12,375 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:06:12,383 - INFO - Extraction completed successfully.
+2026-11-18 00:06:12,383 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:06:12,384 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:06:12,384 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:06:12,397 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:06:12,397 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:06:12,401 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:06:12,414 - INFO - --- LOAD PHASE STARTED ---
+2026-11-18 00:06:12,415 - INFO - ETL Audit Metrics Successfully Saved: {'extracted_rows_patients': 0, 'extracted_rows_appointments': 0, 'extracted_rows_treatments': 0, 'invalid_records_count': 1134, 'duplicate_records_removed': 395, 'loaded_rows': 12612}
+2026-11-18 00:06:12,415 - INFO - No database connection string provided. Skipping database push (CSV audit log saved successfully).
+2026-11-18 00:06:12,415 - INFO - Load phase completed successfully[cite: 1].
+2026-11-18 00:06:12,415 - INFO - ===== HEALTHCARE ETL PIPELINE COMPLETED =====
+2026-11-18 00:08:52,573 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:08:52,581 - INFO - Extraction completed successfully.
+2026-11-18 00:08:52,581 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:08:52,583 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:08:52,583 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:08:52,595 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:08:52,595 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:08:52,599 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:08:52,613 - INFO - --- LOAD PHASE STARTED ---
+2026-11-18 00:08:52,613 - INFO - ETL Audit Metrics Successfully Saved: {'extracted_rows_patients': 0, 'extracted_rows_appointments': 0, 'extracted_rows_treatments': 0, 'invalid_records_count': 1134, 'duplicate_records_removed': 395, 'loaded_rows': 12612}
+2026-11-18 00:08:52,613 - INFO - Connecting to database for saving tables...
+2026-11-18 00:08:52,613 - INFO - Load phase completed successfully[cite: 1].
+2026-11-18 00:09:37,771 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:09:37,779 - INFO - Extraction completed successfully.
+2026-11-18 00:09:37,779 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:09:37,780 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:09:37,780 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:09:37,789 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:09:37,789 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:09:37,793 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:09:37,806 - INFO - --- LOAD PHASE STARTED ---
+2026-11-18 00:09:37,807 - INFO - ETL Audit Metrics Successfully Saved: {'extracted_rows_patients': 0, 'extracted_rows_appointments': 0, 'extracted_rows_treatments': 0, 'invalid_records_count': 1134, 'duplicate_records_removed': 395, 'loaded_rows': 12612}
+2026-11-18 00:09:37,807 - INFO - Connecting to database for saving tables...
+2026-11-18 00:09:37,807 - INFO - Load phase completed successfully[cite: 1].
+2026-11-18 00:14:58,256 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:14:58,264 - INFO - Extraction completed successfully.
+2026-11-18 00:14:58,264 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:14:58,265 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:14:58,265 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:14:58,273 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:14:58,273 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:14:58,278 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:14:58,292 - INFO - --- LOAD PHASE STARTED ---
+2026-11-18 00:14:58,292 - INFO - ETL Audit Metrics Successfully Saved: {'extracted_rows_patients': 0, 'extracted_rows_appointments': 0, 'extracted_rows_treatments': 0, 'invalid_records_count': 1134, 'duplicate_records_removed': 395, 'loaded_rows': 12612}
+2026-11-18 00:14:58,292 - INFO - Connecting to database for saving tables...
+2026-11-18 00:14:58,292 - INFO - Load phase completed successfully[cite: 1].
+2026-11-18 00:18:23,112 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:18:23,118 - INFO - Extraction completed successfully.
+2026-11-18 00:18:23,118 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:18:23,119 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:18:23,119 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:18:23,127 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:18:23,127 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:18:23,131 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:19:13,168 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:19:13,174 - INFO - Extraction completed successfully.
+2026-11-18 00:19:13,174 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:19:13,175 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:19:13,175 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:19:13,184 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:19:13,184 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:19:13,187 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:19:32,086 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:19:32,092 - INFO - Extraction completed successfully.
+2026-11-18 00:19:32,092 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:19:32,093 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:19:32,093 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:19:32,101 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:19:32,101 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:19:32,104 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:20:20,561 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:20:20,572 - INFO - Extraction completed successfully.
+2026-11-18 00:20:20,572 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:20:20,574 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:20:20,574 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:20:20,582 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:20:20,582 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:20:20,585 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:20:20,599 - INFO - Load started
+2026-11-18 00:20:32,392 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:20:32,398 - INFO - Extraction completed successfully.
+2026-11-18 00:20:32,398 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:20:32,399 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:20:32,399 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:20:32,406 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:20:32,406 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:20:32,409 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:20:32,422 - INFO - Load started
+2026-11-18 00:21:51,000 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:21:51,008 - INFO - Extraction completed successfully.
+2026-11-18 00:21:51,009 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:21:51,010 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:21:51,010 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:21:51,021 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:21:51,021 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:21:51,025 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:21:51,041 - INFO - Load started
+2026-11-18 00:22:31,446 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:22:31,452 - INFO - Extraction completed successfully.
+2026-11-18 00:22:31,452 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:22:31,453 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:22:31,453 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:22:31,462 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:22:31,462 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:22:31,467 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:22:31,481 - INFO - Load started
+2026-11-18 00:26:23,150 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:26:23,159 - INFO - Extraction completed successfully.
+2026-11-18 00:26:23,159 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:26:23,160 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:26:23,160 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:26:23,172 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:26:23,172 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:26:23,177 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:26:23,191 - INFO - Load started
+2026-11-18 00:27:29,333 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:27:29,340 - INFO - Extraction completed successfully.
+2026-11-18 00:27:29,340 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:27:29,341 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:27:29,341 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:27:29,350 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:27:29,350 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:27:29,353 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:27:29,367 - INFO - Load started
+2026-11-18 00:28:08,811 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:28:08,820 - INFO - Extraction completed successfully.
+2026-11-18 00:28:08,820 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:28:08,822 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:28:08,822 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:28:08,832 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:28:08,832 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:28:08,836 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:28:08,850 - INFO - Load started
+2026-11-18 00:28:44,367 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:28:44,373 - INFO - Extraction completed successfully.
+2026-11-18 00:28:44,373 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:28:44,374 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:28:44,374 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:28:44,381 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:28:44,381 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:28:44,385 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:28:44,398 - INFO - Load started
+2026-11-18 00:31:46,563 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:31:46,570 - INFO - Extraction completed successfully.
+2026-11-18 00:31:46,570 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:31:46,572 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:31:46,572 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:31:46,583 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:31:46,583 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:31:46,587 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:31:46,601 - INFO - Load started
+2026-11-18 00:36:09,574 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:36:09,580 - INFO - Extraction completed successfully.
+2026-11-18 00:36:09,580 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:36:09,581 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:36:09,581 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:36:09,589 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:36:09,589 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:36:09,592 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:36:09,606 - INFO - Load started
+2026-11-18 00:36:49,777 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:36:49,784 - INFO - Extraction completed successfully.
+2026-11-18 00:36:49,784 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:36:49,786 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:36:49,786 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:36:49,800 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:36:49,800 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:36:49,803 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:36:49,816 - INFO - Load started
+2026-11-18 00:38:58,802 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:38:58,810 - INFO - Extraction completed successfully.
+2026-11-18 00:38:58,810 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:38:58,811 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:38:58,811 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:38:58,822 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:38:58,822 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:38:58,827 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:39:37,914 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-18 00:39:37,914 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:39:37,920 - INFO - Extraction completed successfully.
+2026-11-18 00:39:37,920 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:39:37,921 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:39:37,921 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:39:37,929 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:39:37,929 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:39:37,932 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:39:37,946 - INFO - Load started
+2026-11-18 00:40:22,037 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-18 00:40:22,037 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:40:22,044 - INFO - Extraction completed successfully.
+2026-11-18 00:40:22,044 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:40:22,045 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:40:22,045 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:40:22,054 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:40:22,054 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:40:22,058 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:40:22,072 - INFO - Load started
+2026-11-18 00:41:05,173 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-18 00:41:05,173 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:41:05,181 - INFO - Extraction completed successfully.
+2026-11-18 00:41:05,181 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:41:05,183 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:41:05,183 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:41:05,192 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:41:05,192 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:41:05,197 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:41:05,211 - INFO - Load started
+2026-11-18 00:42:01,303 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-18 00:42:01,303 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:42:01,309 - INFO - Extraction completed successfully.
+2026-11-18 00:42:01,310 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:42:01,311 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:42:01,311 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:42:01,319 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:42:01,319 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:42:01,322 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:42:01,335 - INFO - Load started
+2026-11-18 00:43:10,155 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-18 00:43:10,155 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 00:43:10,163 - INFO - Extraction completed successfully.
+2026-11-18 00:43:10,163 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 00:43:10,164 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 00:43:10,164 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 00:43:10,175 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 00:43:10,175 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 00:43:10,179 - INFO - Dataset enrichment and merging completed.
+2026-11-18 00:43:10,192 - INFO - Load started
+2026-11-18 00:43:12,018 - INFO - Load completed successfully. Total loaded rows: 11536
+2026-11-18 00:43:12,018 - INFO - ===== HEALTHCARE ETL PIPELINE COMPLETED =====
+2026-11-18 01:10:32,097 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-18 01:10:32,097 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 01:10:32,104 - INFO - Extraction completed successfully.
+2026-11-18 01:10:32,104 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 01:10:32,105 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 01:10:32,105 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 01:10:32,113 - INFO - Transformations and cleaning completed successfully.
+2026-11-18 01:10:32,113 - INFO - --- ENRICH PHASE STARTED ---
+2026-11-18 01:10:32,116 - INFO - Dataset enrichment and merging completed.
+2026-11-18 01:10:32,129 - INFO - Load started
+2026-11-18 01:10:34,072 - INFO - Load completed successfully. Total loaded rows: 11536
+2026-11-18 01:10:34,072 - INFO - ===== HEALTHCARE ETL PIPELINE COMPLETED =====
+2026-11-18 01:22:19,303 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-18 01:22:19,304 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 01:22:19,311 - INFO - patients.csv: Schema validated successfully.
+2026-11-18 01:22:19,311 - INFO - appointments.csv: Schema validated successfully.
+2026-11-18 01:22:19,311 - INFO - treatments.csv: Schema validated successfully.
+2026-11-18 01:22:19,311 - INFO - Extraction and schema validation completed successfully.
+2026-11-18 01:22:19,311 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 01:22:19,314 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 01:22:19,314 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 01:22:19,324 - INFO - NumPy Stats -> Mean Cost: $2533.18 | 99th Percentile Outlier Threshold: $4949.13
+2026-11-18 01:22:19,324 - INFO - --- ENRICH & DATA QUALITY REPORT PHASE STARTED ---
+2026-11-18 01:22:19,343 - INFO - Saved cleaned CSVs and data_quality_report.csv.
+2026-11-18 01:22:19,343 - INFO - --- LOAD PHASE STARTED ---
+2026-11-18 01:22:19,495 - INFO - DDL schema, partitions, and indexes created successfully.
+2026-11-18 01:22:20,195 - INFO - Audit metrics saved to SQL table etl_audit_log. Total rows loaded: 11708
+2026-11-18 01:22:20,195 - INFO - ===== HEALTHCARE ETL PIPELINE COMPLETED =====
+2026-11-18 10:08:35,192 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-18 10:08:35,193 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 10:08:35,201 - INFO - patients.csv: Schema validated successfully.
+2026-11-18 10:08:35,201 - INFO - appointments.csv: Schema validated successfully.
+2026-11-18 10:08:35,201 - INFO - treatments.csv: Schema validated successfully.
+2026-11-18 10:08:35,201 - INFO - Extraction and schema validation completed successfully.
+2026-11-18 10:08:35,201 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 10:08:35,204 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 10:08:35,204 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 10:08:35,213 - INFO - NumPy Stats -> Mean Cost: $2533.18 | 99th Percentile Outlier Threshold: $4949.13
+2026-11-18 10:08:35,213 - INFO - --- ENRICH & DATA QUALITY REPORT PHASE STARTED ---
+2026-11-18 10:08:35,229 - INFO - Saved cleaned CSVs and data_quality_report.csv.
+2026-11-18 10:08:35,230 - INFO - --- LOAD PHASE STARTED ---
+2026-11-18 10:08:35,424 - INFO - DDL schema, partitions, and indexes created successfully.
+2026-11-18 10:08:36,188 - INFO - Audit metrics saved to SQL table etl_audit_log. Total rows loaded: 11708
+2026-11-18 10:08:36,188 - INFO - ===== HEALTHCARE ETL PIPELINE COMPLETED =====
+2026-11-18 12:06:41,962 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-18 12:06:41,963 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 12:06:41,971 - INFO - patients.csv: Schema validated successfully.
+2026-11-18 12:06:41,971 - INFO - appointments.csv: Schema validated successfully.
+2026-11-18 12:06:41,971 - INFO - treatments.csv: Schema validated successfully.
+2026-11-18 12:06:41,971 - INFO - Extraction and schema validation completed successfully.
+2026-11-18 12:06:41,971 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 12:06:41,974 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 12:06:41,974 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 12:06:41,986 - INFO - NumPy Stats -> Mean Cost: $2533.18 | 99th Percentile Outlier Threshold: $4949.13
+2026-11-18 12:06:41,986 - INFO - --- ENRICH & DATA QUALITY REPORT PHASE STARTED ---
+2026-11-18 12:06:42,002 - INFO - Saved cleaned CSVs and data_quality_report.csv.
+2026-11-18 12:06:42,002 - INFO - --- LOAD PHASE STARTED ---
+2026-11-18 12:06:42,141 - INFO - DDL schema, partitions, and indexes created successfully.
+2026-11-18 12:06:42,812 - INFO - Audit metrics saved to SQL table etl_audit_log. Total rows loaded: 11708
+2026-11-18 12:06:42,812 - INFO - ===== HEALTHCARE ETL PIPELINE COMPLETED =====
+2026-11-18 12:08:15,329 - INFO - ===== HEALTHCARE ETL PIPELINE STARTED =====
+2026-11-18 12:08:15,329 - INFO - --- EXTRACT PHASE STARTED ---
+2026-11-18 12:08:15,337 - INFO - patients.csv: Schema validated successfully.
+2026-11-18 12:08:15,337 - INFO - appointments.csv: Schema validated successfully.
+2026-11-18 12:08:15,337 - INFO - treatments.csv: Schema validated successfully.
+2026-11-18 12:08:15,337 - INFO - Extraction and schema validation completed successfully.
+2026-11-18 12:08:15,337 - INFO - --- VALIDATE PHASE STARTED ---
+2026-11-18 12:08:15,340 - INFO - Invalid/Orphan records flagged: 1134
+2026-11-18 12:08:15,340 - INFO - --- TRANSFORM & BUSINESS LOGIC PHASE STARTED ---
+2026-11-18 12:08:15,351 - INFO - NumPy Stats -> Mean Cost: $2533.18 | 99th Percentile Outlier Threshold: $4949.13
+2026-11-18 12:08:15,352 - INFO - --- ENRICH & DATA QUALITY REPORT PHASE STARTED ---
+2026-11-18 12:08:15,368 - INFO - Saved cleaned CSVs and data_quality_report.csv.
+2026-11-18 12:08:15,368 - INFO - --- LOAD PHASE STARTED ---
+2026-11-18 12:08:15,492 - INFO - DDL schema, partitions, and indexes created successfully.
+2026-11-18 12:08:16,157 - INFO - Audit metrics saved to SQL table etl_audit_log. Total rows loaded: 11708
+2026-11-18 12:08:16,157 - INFO - ===== HEALTHCARE ETL PIPELINE COMPLETED =====

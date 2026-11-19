@@ -1,0 +1,11 @@
+Data_Quality_Check,Issue_Count
+missing_patient_names,47
+duplicate_patients,33
+duplicate_appointments,159
+duplicate_treatments,203
+null_patient_ids_in_appts,233
+null_treatment_costs,358
+orphan_appointments,809
+orphan_treatments,325
+invalid_dob_dates,50
+invalid_end_timestamps,229

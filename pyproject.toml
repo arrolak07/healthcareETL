@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.15"
 dependencies = [
     "faker>=40.54.0",
+    "matplotlib>=3.11.2",
     "pandas>=3.1.1",
     "psycopg>=3.3.9",
     "psycopg2-binary>=2.9.13",

@@ -3,15 +3,12 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sqlalchemy import create_engine
 
-# Change password and database_name to match yours
 engine = create_engine("postgresql+psycopg2://postgres:12345@localhost:5433/healthcare_db")
-
 Path("charts").mkdir(exist_ok=True)
 
 
 def make_bar_chart(sql, x_col, y_col, title, filename):
     df = pd.read_sql(sql, engine)
-
     plt.figure(figsize=(8, 4))
     plt.bar(df[x_col].astype(str), df[y_col])
     plt.title(title)
@@ -38,7 +35,23 @@ make_bar_chart(
     filename="chart1_treatments.png",
 )
 
-# 2. Monthly appointment trends
+# 2. Visits per patient (Top 15 most-visited patients)
+make_bar_chart(
+    sql="""
+        SELECT p.patient_name, COUNT(a.appointment_id) AS total_visits
+        FROM dim_patient p
+        LEFT JOIN dim_appointment a ON p.patient_id = a.patient_id
+        GROUP BY p.patient_id, p.patient_name
+        ORDER BY total_visits DESC
+        LIMIT 15;
+    """,
+    x_col="patient_name",
+    y_col="total_visits",
+    title="Top 15 Patients by Visit Count",
+    filename="chart2_visits_per_patient.png",
+)
+
+# 3. Monthly appointment trends
 make_bar_chart(
     sql="""
         SELECT TO_CHAR(start_time, 'YYYY-MM') AS month, COUNT(*) AS appointments
@@ -49,28 +62,10 @@ make_bar_chart(
     x_col="month",
     y_col="appointments",
     title="Monthly Appointments",
-    filename="chart2_monthly_appointments.png",
+    filename="chart3_monthly_appointments.png",
 )
 
-# 3. Treatments per doctor
-# 3. Treatments per doctor (Top 15 so labels don't overlap)
-make_bar_chart(
-    sql="""
-        SELECT d.doctor_id, COUNT(t.treatment_id) AS treatments
-        FROM dim_doctor d
-        LEFT JOIN dim_appointment a ON d.doctor_id = a.doctor_id
-        LEFT JOIN fact_treatment t ON a.appointment_id = t.appointment_id
-        GROUP BY d.doctor_id
-        ORDER BY treatments DESC
-        LIMIT 15;
-    """,
-    x_col="doctor_id",
-    y_col="treatments",
-    title="Top 15 Doctors by Treatments",
-    filename="chart3_doctor_treatments.png",
-)
-
-# 4. Total cost per patient (Top 15 patients so labels stay readable)
+# 4. Total cost per patient (Top 15)
 make_bar_chart(
     sql="""
         SELECT p.patient_name, COALESCE(SUM(t.cost), 0) AS total_cost
@@ -142,7 +137,7 @@ make_bar_chart(
     filename="chart7_frequent_visits.png",
 )
 
-# 8. Treatments per doctor (already built—Top 15 version)
+# 8. Treatments per doctor (Top 15)
 make_bar_chart(
     sql="""
         SELECT d.doctor_id, COUNT(t.treatment_id) AS treatments
@@ -159,7 +154,7 @@ make_bar_chart(
     filename="chart8_doctor_treatments.png",
 )
 
-# 9. Top 1% cost outliers (Highest cost treatments, Top 15)
+# 9. Top 1% cost outliers (Top 15)
 make_bar_chart(
     sql="""
         SELECT treatment_id::TEXT AS treatment_label, cost
@@ -201,4 +196,3 @@ make_bar_chart(
     title="Avg Treatments Per Patient by Signup Month",
     filename="chart10_cohort_analysis.png",
 )
-
